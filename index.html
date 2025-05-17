@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Para Minha Preta 💌</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffccd5, #ffe6f0);
+            font-family: 'Dancing Script', cursive;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #c71585;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 1.8;
+            color: #333;
+            text-align: justify;
+        }
+
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transform: rotate(45deg);
+            animation: floatHearts 10s linear infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .music-box {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hearts">
+        <div class="heart" style="left:10%; animation-delay: 0s;"></div>
+        <div class="heart" style="left:25%; animation-delay: 2s;"></div>
+        <div class="heart" style="left:40%; animation-delay: 4s;"></div>
+        <div class="heart" style="left:60%; animation-delay: 1s;"></div>
+        <div class="heart" style="left:75%; animation-delay: 3s;"></div>
+        <div class="heart" style="left:90%; animation-delay: 5s;"></div>
+    </div>
+
+    <div class="container">
+        <h1>Para Minha Preta 💖</h1>
+        <img src="foto.jpeg" alt="Nosso amor" />
+        <p>Oi, minha Preta. Ou melhor, minha Jo.</p>
+        <p>Desde o momento em que te vi pela primeira vez nas redes sociais, alguma coisa me disse: <em>“É ela.”</em>
+            Mesmo ali, por trás de uma tela, você já tinha aquela energia que faz o coração acelerar. Eu não sabia
+            exatamente o que viria depois — mas eu sabia que queria descobrir com você.</p>
+        <p>Você é única. O jeito que você fala, o brilho do seu sorriso, o seu cabelo que parece ter sido feito só pra
+            balançar do jeito certo no momento certo… e, claro, aquela bunda absurda que me deixa completamente bobo.
+        </p>
+        <p>Mas o mais bonito de tudo é o que você é por dentro — forte, leve, cheia de atitude e com um coração que eu
+            admiro todos os dias.</p>
+        <p>A nossa história tem de tudo: charme, carinho, zoeira, paixão… e até queda de moto a 10km/h. 😂 Uma cena
+            digna de filme. Mas é assim que a gente é: rimos até dos tombos, porque o importante é que estamos juntos,
+            rindo depois.</p>
+        <p>Quando toca <strong>“Oq cê fez”</strong> do Derxan, meu coração sorri e aperta ao mesmo tempo. Porque eu sei
+            exatamente o que você fez: <strong>você virou tudo pra mim.</strong></p>
+        <p>Preta, obrigado por ser minha. Por me deixar ser teu. Por ser exatamente quem você é, sem tirar nem pôr.</p>
+        <p>E se algum dia você esquecer o quanto é incrível, volta aqui e lê essa carta de novo. Porque eu vou estar
+            sempre aqui, te lembrando — com palavras, com ações, com todo o amor que tenho.</p>
+        <p>Te amo. ❤️</p>
+    </div>
+
+    <div class="music-box">
+        <iframe width="0" height="0"
+            src="https://www.youtube.com/embed/9FzI3QhEDno?autoplay=1&loop=1&playlist=9FzI3QhEDno" frameborder="0"
+            allow="autoplay"></iframe>
+    </div>
+</body>
+
+</html>
