@@ -183,11 +183,20 @@
     </div>
 
     <div class="music-box">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9MHmmPSsoYs?autoplay=1&mute=1"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <audio id="musica" src="DERXAN - OQ CÊ FEZ？ part. MALU.mp3"></audio>
     </div>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const audio = document.getElementById("musica");
+            audio.play().catch(() => {
+                document.addEventListener("click", () => {
+                    audio.play();
+                }, { once: true });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
